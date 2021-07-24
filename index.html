@@ -17,10 +17,19 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        
+        <!-- Slick Slider CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <!-- jQuery first, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <!-- Slick Slider JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+      
+      
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -34,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#about">About Us</a></li>
-                        <li class="nav-item"><a class="nav-link me-lg-3" href="#course">Course Overview</a></li>
+                        <li class="nav-item"><a class="nav-link me-lg-3" href="#course">Our Services</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#team">Our Team</a></li>
                         <li class="nav-item"><a class="nav-link me-lg-3" href="#pricing">Pricing</a></li>
                     </ul>
@@ -55,63 +64,54 @@
                     <div class="col-lg-6">
                         <!-- Mashead text and app badges-->
                         <div class="mb-5 mb-lg-0 text-center text-lg-start">
-                            <h1 class="display-1 lh-1 mb-3">Let's talk about AI for</h1>
-                            <p class="lead fw-normal text-muted mb-5">Know more about the practicum in AI in our daily life. Listen to our podcast at:
+                            <h1 class="display-1 lh-1 mb-3 text-white">Chart Your Own Course Towards <u><span
+                              class="txt-rotate"
+                              data-period="2000"
+                              data-rotate='[ "Harvard.", "Princeton.", "Yale.", "Columbia.", "UPenn." , "UCB."]'></span></u></h1>
+                            <p class="lead fw-normal mb-4 text-white">Know about elite college admissions and discover your unique way of getting in to get in with Ivy Map, taught by offer holders from elite schools.
                                 </p>
                             <div class="d-flex flex-column flex-lg-row align-items-center">
-                                <a class="me-lg-3 mb-4 mb-lg-0" href="#!"><img class="app-badge" src="assets/img/spotify-podcast-badge-blk-grn-330x80.svg" alt="..." /></a>
-                                <a href="#!"><img class="app-badge" src="assets/img/US_UK_Apple_Podcasts_Listen_Badge_RGB.svg" alt="..." /></a>
+                              <a class="btn btn-outline-light py-3 px-4 mb-4 rounded-pill" href="#course">Course Overview</a>
+                              <a class="btn btn-outline-light py-3 px-4 mb-4 rounded-pill mx-sm-3" href="#pricing">Pricing</a>
+                              <a class="btn btn-outline-light py-3 px-4 mb-4 rounded-pill" href="#team">Team</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-8 col-md-6">
-                        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-
-                            <!-- Wrapper for slides -->
-                            <div class="carousel-inner">
-                              <div class="item active">
-                                <img src="assets/img/harvard.png" style="width:100%;">
-                              </div>
-                        
-                              <div class="item">
-                                <img src="assets/img/princeton.png"  style="width:100%;">
-                              </div>
-                            
-                              <div class="item">
-                                <img src="assets/img/yale.png"  style="width:100%;">
-                              </div>
-
-                              <div class="item">
-                                <img src="assets/img/upenn.png"  style="width:100%;">
-                              </div>
-
-                              <div class="item">
-                                <img src="assets/img/columbia.png"  style="width:100%;">
-                              </div>
-
-                              <div class="item">
-                                <img src="assets/img/berkeley.jpeg"  style="width:100%;">
-                              </div>
-                            </div>      
+                      <div class="px-5 px-sm-0"><img class="img-fluid" src="assets/img/Ivy map.png" size = "100%"/></div>     
                     </div>
                 </div>
             </div>
         </header>
 
+        <!-- Taght By section-->
+        <section class="bg-white" id="credits">
+            <div class="container-slider px-5">
+              <h1 class = "text-center text-black">Taught by offer holders from:</h1>
+              <section class="logo-carousel slider" data-arrows="true">
+                <div class="slides"><img class = "img-fluid" src="assets/img/harvard.png"></div>
+                <div class="slides"><img class = "img-fluid" src="assets/img/princeton.png"></div>
+                <div class="slides"><img class = "img-fluid" src="assets/img/yale.png"></div>
+                <div class="slides"><img class = "img-fluid" src="assets/img/upenn.png"></div>
+                <div class="slides"><img class = "img-fluid" src="assets/img/columbia.png"></div>
+                <div class="slides"><img class = "img-fluid" src="assets/img/berkeley.jpeg"></div>
+                <div class="slides"><img class = "img-fluid" src="assets/img/cornell.jpeg"></div>
+              </section>
+            </div>
+          </div>
+      </section>
 
+    
 
         <!-- About Us section-->
-        <section class="bg-gradient-primary-to-secondary" id="about">
+        <section class="bg-gradient-2" id="about">
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 col-lg-5 text-center">
-                        <h2 class="display-4 lh-1 mb-4 text-center">About Us</h2>
+                        <h2 class="display-4 lh-1 mb-4 text-center text-white">Holistic Coaching</h2>
                         <br />
                         <br />
-                        <p class="lead fw-normal text-muted mb-5 mb-lg-0"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
-                        <a class="btn btn-outline-dark py-3 px-4 mt-4 mb-4 rounded-pill" href="#course">Course Overview</a>
-                        <a class="btn btn-outline-dark py-3 px-4 mt-4 mb-4 rounded-pill mx-sm-3" href="#pricing">Pricing</a>
-                        <a class="btn btn-outline-dark py-3 px-4 mt-4 mb-4 rounded-pill" href="#team">Team</a>
+                        <p class="lead fw-normal text-white mb-5 mb-lg-0"> Admissions is holistic, so why shouldn’t coaching be too? At Ivy Map, we believe that helping you succeed as a student in every way is the best way to stack the deck in your favor. We offer 1-on-1 Zoom coaching for as long as you need to craft an extraordinary application.  </p>
                 </div>
                     <div class="col-sm-8 col-md-6">
                         <div class="px-5 px-sm-0"><img class="img-fluid rounded-circle" src="assets/img/gif.gif" alt="..." /></div>
@@ -127,90 +127,62 @@
             <div class="container px-5">
                 <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12">
-                        <h2 class="display-4 lh-1 mb-5 text-center text-black">Course Overview</h2>
+                        <h2 class="display-4 lh-1 mb-5 text-center text-black">Our Services</h2>
                         <p class="lead fw-normal text-black mb-5 mb-lg-0 text-center" >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                          Our college consultancy model sees our students receive individualised support in every aspect of their US application — from university selection strategy, test prep and personal statement/essay support, to extracurricular mentoring and interview practice. Here's how we work!  </p>
                     </div>
                 </div>
             </div>
+          
+            <div class="container">
+              <div class="row">
+                  <div class="col-lg-3 mb-4 mt-4">
+                      <div class="card shadow p-3 rounded">
+                        <img src="assets/img/2.png" alt="" class="card-img-top mb-2">
+                          <div class="card-body">
+                              <h5 class="card-title text-center">Write mature and compelling essays.</h5>
+                              <p class="card-text text-center">We’ll provide techniques you can use to not only ideate and write sophisticated essays, but to tell your personal story.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 mb-4 mt-4">
+                      <div class="card shadow p-3 rounded">
+                          <img src="assets/img/3.png" alt="" class="card-img-top mb-2">
+                          <div class="card-body">
+                              <h5 class="card-title text-center">Flourish in examinations and tests.</h5>
+                              <p class="card-text text-center">Our coaches double-up as academic tutors and can teach you the correct methods to supercharge your learning.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 mb-4 mt-4">
+                      <div class="card shadow p-3 rounded">
+                        <img src="assets/img/7.png" alt="" class="card-img-top mb-2">
+                          <div class="card-body">
+                              <h5 class="card-title text-center">Building ECAs & Portfolio</h5>
+                              <p class="card-text text-center">We’ll show you how to sell yourself using the extracurricular and additional information sections of the Common App.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-3 mb-4 mt-4">
+                    <div class="card shadow p-3 rounded">
+                      <img src="assets/img/6.png" alt="" size = "60%" class="card-img-top mb-2">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Connect with experienced applicants.</h5>
+                            <p class="card-text text-center">Our team is ideally situated to assist with interview preparation and teacher recommendations.</p>
+                        </div>
+                    </div>
+              </div>
+            </div>
+         
+</section>
 
 
-             <!--Timeline-->
-        <section class="timeline">
-            <ul>
-              <li>
-                <div>
-                  <time>1934</time> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1937</time> Proin quam velit, efficitur vel neque vitae, rhoncus commodo mi. Suspendisse finibus mauris et bibendum molestie. Aenean ex augue, varius et pulvinar in, pretium non nisi.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1940</time> Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1943</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1946</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1956</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1957</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1967</time> Aenean condimentum odio a bibendum rhoncus. Ut mauris felis, volutpat eget porta faucibus, euismod quis ante.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1977</time> Vestibulum porttitor lorem sed pharetra dignissim. Nulla maximus, dui a tristique iaculis, quam dolor convallis enim, non dignissim ligula ipsum a turpis.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>1985</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>2000</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <time>2005</time> In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.
-                </div>
-              </li>
-            </ul>
-          </section>
-            
-        </section>
-
-       
-
-        <!-- Episodes section-->
-        <section class="bg-gradient-primary-to-secondary" id="team">
+        <!-- Team section-->
+        <section class="bg-gradient-1" id="team">
             <div class="container">
                 <div class="row  align-items-center justify-content-center justify-content-lg-between">
                     <div class="col-12 text-center">
-                        <h2 class="display-4 lh-1 mb-5 text-center">Our Team</h2>
+                        <h2 class="display-4 lh-1 mb-5 text-center text-white">Our Team</h2>
                     </div>
                 </div>
             </div>
@@ -220,7 +192,7 @@
                         <div class="card shadow p-3 rounded">
                             <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top mb-2">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Person 1</h5>
+                                <h5 class="card-title text-center">Zad Chin</h5>
                                 <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
                                 <div class="col text-center mt-2"><a href="" class="btn btn-outline-success btn-sm rounded-pill">Coming Soon</a></div>
                             </div>
@@ -230,7 +202,7 @@
                         <div class="card shadow p-3 rounded">
                             <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top mb-2">
                             <div class="card-body">
-                                <h5 class="card-title text-center">Person 2</h5>
+                                <h5 class="card-title text-center">Jarell Cheong</h5>
                                 <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
                                 <div class="col text-center mt-2"><a href="" class="btn btn-outline-success btn-sm rounded-pill">Coming Soon</a></div>
                             </div>
@@ -240,7 +212,7 @@
                     <div class="card shadow p-3 rounded">
                         <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top mb-2">
                         <div class="card-body">
-                            <h5 class="card-title text-center">Person 3</h5>
+                            <h5 class="card-title text-center">Pua Kok Wei</h5>
                             <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
                             <div class="col text-center mt-2"><a href="" class="btn btn-outline-success btn-sm rounded-pill">Coming Soon</a></div>
                         </div>
@@ -249,117 +221,99 @@
             </div>
         </section>
 
-        <!--Pricing-->
-        <section class="bg-white" id="pricing"> 
-            <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-lg-between mt-5">
-                    <div class="col text-center mt-2">
-                        <h2 class="display-4 lh-1 mb-3 text-center">Pricing</h2>
-                    </div>    
+                <!--Pricing-->
+                <section class="bg-white" id="pricing"> 
+                  <div class="container">
+                      <div class="row align-items-center justify-content-center justify-content-lg-between mt-5">
+                          <div class="col text-center mt-2">
+                              <h2 class="display-4 lh-1 mb-5 text-center">Pricing</h2>
+                          </div>    
+                      </div>
+                  </div>
+                  
+                  <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">
+                            <div class="card card1 shadow p-3 rounded">
+                              <br></br>
+                              <span class="h2 text-center">$40</span>
+                              <br></br>
+                              <h5 class="card-title text-center">Basic</h5>
+                              
+                                <div class="card-body text-center">
+                                
+                                    <p>✅ Cras justo odio</p>
+                                    <p>✅ Cras justo odio</p>
+                                    <p>✅ Cras justo odio</p>
+                                    
+                            
+                                    <div class="col text-center mt-2"><button class="btn btn-outline-dark btn-block">Select</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                          <div class="card card2 shadow p-3 rounded">
+                            <br></br>
+                            <span class="h2 text-center">$40</span>
+                            <br></br>
+                            <h5 class="card-title text-center">Basic</h5>
+                            
+                              <div class="card-body text-center">
+                              
+                                  <p>✅ Cras justo odio</p>
+                                  <p>✅ Cras justo odio</p>
+                                  <p>✅ Cras justo odio</p>
+                                  
+                          
+                                  <div class="col text-center mt-2"><button class="btn btn-outline-dark btn-block">Select</button></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 mb-4">
+                        <div class="card card3 shadow p-3 rounded">
+                          <br></br>
+                          <span class="h2 text-center">$40</span>
+                          <br></br>
+                          <h5 class="card-title text-center">Basic</h5>
+                          
+                            <div class="card-body text-center">
+                            
+                                <p>✅ Cras justo odio</p>
+                                <p>✅ Cras justo odio</p>
+                                <p>✅ Cras justo odio</p>
+                                
+                        
+                                <div class="col text-center mt-2"><button class="btn btn-outline-dark btn-block">Select</button></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="container-fluid">
-                <div class="container p-5">
-                  <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-4 col-md-12 mb-4">
-                      <div class="card card1 h-100">
-                        <div class="card-body">
-                         
-                          <h5 class="card-title">Basic</h5>
-                          <small class='text-muted'>Individual</small>
-                          <br><br>
-                          <span class="h2">$8</span>/month
-                          <br><br>
-                          <div class="d-grid my-3">
-                            <button class="btn btn-outline-dark btn-block">Select</button>
-                          </div>
-                          <ul>
-                            <li>Cras justo odio</li>
-                            <li>Dapibus ac facilisis in</li>
-                            <li>Vestibulum at eros</li>
-                            
-                          </ul>
-                        </div>
-            
-                        
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 mb-4">
-                      <div class="card card2 h-100">
-                        <div class="card-body">
-                         
-                          <h5 class="card-title">Standard</h5>
-                          <small class='text-muted'>Small Business</small>
-                          <br><br>
-                          <span class="h2">$20</span>/month
-                          <br><br>
-                          <div class="d-grid my-3">
-                            <button class="btn btn-outline-dark btn-block">Select</button>
-                          </div>
-                          <ul>
-                            <li>Cras justo odio</li>
-                            <li>Dapibus ac facilisis in</li>
-                            <li>Vestibulum at eros</li>
-                            
-                          </ul>
-                        </div>
-            
-                        
-                      </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12 mb-4">
-                      <div class="card card3 h-100">
-                        <div class="card-body">
-                         
-                          <h5 class="card-title">Premium</h5>
-                          <small class='text-muted'>Large Company</small>
-                          <br><br>
-                          <span class="h2">$40</span>/month
-                          <br><br>
-                          <div class="d-grid my-3">
-                            <button class="btn btn-outline-dark btn-block">Select</button>
-                          </div>
-                          <ul>
-                            <li>Cras justo odio</li>
-                            <li>Dapibus ac facilisis in</li>
-                            <li>Vestibulum at eros</li>
-                            
-                          </ul>
-                        </div>
-            
-                        
-                      </div>
-                    </div>
-                  </div>    
-                </div>
-        </section>
-
+              </section>
         <!-- Social Media bar -->
                 <section class="bg-gradient-primary-to-secondary" id="social-media">
                     <div class="container px-5">
-                        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between">
+                        <div class="row gx-5 align-items-center justify-content-center justify-content-lg-between mb-3">
                             <div class="col-12 text-center">
                                 <!-- Facebook -->
-                                <i class="fa fa-facebook fa-2x mx-4"></i>
+                                <i class="fa fa-facebook fa-2x mx-4 mb-3"></i>
         
                                 <!-- Twitter -->
-                                <i class="fa fa-twitter fa-2x mx-4"></i>
+                                <i class="fa fa-twitter fa-2x mx-4 mb-3"></i>
         
                                 <!-- Instagram -->
-                                <i class="fa fa-instagram fa-2x mx-4"></i>
+                                <i class="fa fa-instagram fa-2x mx-4 mb-3"></i>
         
                                 <!-- Linkedin -->
-                                <i class="fa fa-linkedin fa-2x mx-4"></i>
+                                <i class="fa fa-linkedin fa-2x mx-4 mb-3"></i>
         
                                 <!-- Pinterest -->
-                                <i class="fa fa-spotify fa-2x mx-4"></i>
+                                <i class="fa fa-spotify fa-2x mx-4 mb-3"></i>
         
                                 <!-- Youtube -->
-                                <i class="fa fa-youtube fa-2x mx-4"></i>
+                                <i class="fa fa-youtube fa-2x mx-4 mb-3"></i>
         
                                 <!-- Email -->
-                                <i class="fa fa-envelope fa-2x mx-4"></i>
+                                <i class="fa fa-envelope fa-2x mx-4 mb-3"></i>
                         </div>
                     </div>
         
@@ -380,10 +334,17 @@
             </div>
         </footer>
         <!-- Bootstrap core JS-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet"/>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
+        
         <script src="js/scripts.js"></script>
         <script src="jquery-3.5.1.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         
     </body>
 </html>
