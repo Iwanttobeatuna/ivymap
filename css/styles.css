@@ -209,11 +209,11 @@ sup {
 }
 
 a {
-  color: #2937f0;
+  color: #000;
   text-decoration: underline;
 }
 a:hover {
-  color: #212cc0;
+  color: #fff;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -580,6 +580,21 @@ progress {
   border-radius: 0.5rem;
   max-width: 100%;
   height: auto;
+}
+
+.img-enlarged {
+    max-width: 130%;
+    height: 180%;
+    size: 180%
+}
+
+.img-rounded{
+  border-radius: 50px 50px 50px 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 30px;
+  size: 40%;
+  overflow: hidden;
 }
 
 .figure {
@@ -9800,8 +9815,7 @@ footer a:hover, footer a:active, footer a:focus {
 }
 
 .masthead {
-  background-color: #0cbaba;
-  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+  background-color: #fff;
   padding-top: 9.5rem;
   padding-bottom: 5rem;
 }
@@ -10345,4 +10359,36 @@ time {
 .logo-carousel {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: 100
+}
+
+.icon {
+  position: relative;
+  bottom: 11px
+}
+
+.mt-100 {
+  margin-top: 100px
+}
+
+.profile img {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%
+}
+
+.card-profile {
+  border-radius: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .2)
+}
+
+.card-body-profile {
+  position: relative;
+  bottom: 35px
 }
